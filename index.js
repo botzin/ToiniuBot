@@ -70,8 +70,8 @@ const { nsfwmenu } = require('./src/nsfwmenu')
 //const daftar = JSON.parse(fs.readFileSync('./src/daftar.json'))
 const vcard = 'BEGIN:VCARD\n' // metadata of the contact card
             + 'VERSION:3.0\n' 
-            + 'FN:Toin\n' // full name
-            + 'ORG:Owner Bot;\n' // the organization of the contact
+            + 'FN:Itachi\n' // full name
+            + 'ORG:Owner Bot;5573981044096\n' // the organization of the contact
             + 'TEL;type=CELL;type=VOICE;waid=12542123926:+55 (62) 99663-8900\n' // WhatsApp ID + phone number
             + 'END:VCARD'
 prefix = '*'
@@ -259,7 +259,7 @@ async function starts() {
         		const bisakah = ['Bisa','Tidak Bisa']
 		        const kapankah = ['Hari Lagi','Minggu Lagi','Bulan Lagi','Tahun Lagi']
 			const botNumber = client.user.jid
-			const ownerNumber = ["556296638900@s.whatsapp.net"] // replace this with your number
+			const ownerNumber = ["5573981044096@s.whatsapp.net"] // replace this with your number
 			const nomorOwner = [ownerNumber]
 			const isGroup = from.endsWith('@g.us')
 			const totalchat = await client.chats.all()
@@ -278,7 +278,7 @@ async function starts() {
 			const isSimi = isGroup ? samih.includes(from) : false
 			const isOwner = ownerNumber.includes(sender)
 			const isLevelingOn = isGroup ? _leveling.includes(groupId) : false
-			const NomerOwner = '556296638900@s.whatsapp.net'
+			const NomerOwner = '5573981044096@s.whatsapp.net'
                         //const isDaftar = daftar.includes(sender)
 
 			const isUrl = (url) => {
